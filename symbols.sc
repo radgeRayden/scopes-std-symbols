@@ -60,6 +60,7 @@ let symbols =
                     continue       = "continue"      
                     except         = "except"        
                     define-infix   = "define-infix"
+                    this-function  = "this-function"
             functions = (Scope)
             operators = 
                 'bind-symbols (Scope)
@@ -73,7 +74,13 @@ let symbols =
                     //= = "//="
                     >>= = ">>="
                     <<= = "<<="
-            types             = (Scope)
+                    |   = "|"
+                    ||  = "||"
+
+            types             =
+                'bind-symbols (Scope)
+                    this-type  = "this-type"
+                    super-type = "super-type"
             sugar-macros      = (Scope)
             spice-macros      = (Scope)
             global-symbols    = 
