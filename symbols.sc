@@ -87,6 +87,8 @@ let symbols =
                 'bind-symbols (Scope)
                     main-module? = "main-module?"
                     module-dir   = "module-dir"
+                    module-path  = "module-path"
+                    module-name  = "module-name"
             special-constants =
                 'bind-symbols (Scope)
                     _true    = "true"
