@@ -16,6 +16,7 @@ let standard-lib =
         import struct
         import testing
         import UTF-8
+        import property
 
 let styles-map =
     do
@@ -124,6 +125,7 @@ let symbols =
                     struct        = "struct"
                     testing       = "testing"
                     UTF-8         = "UTF-8"
+                    property      = "property"
         locals;
 run-stage;
 
