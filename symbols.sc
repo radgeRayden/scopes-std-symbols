@@ -17,6 +17,7 @@ let standard-lib =
         import testing
         import UTF-8
         import property
+        import Option
 
 let styles-map =
     do
@@ -126,6 +127,7 @@ let symbols =
                     testing       = "testing"
                     UTF-8         = "UTF-8"
                     property      = "property"
+                    Option        = "Option"
         locals;
 run-stage;
 
