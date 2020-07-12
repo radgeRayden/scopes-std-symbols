@@ -5,6 +5,7 @@ let standard-lib =
         import Array
         import Box
         import Capture
+        import chaining
         import console
         import enum
         import FunctionChain
@@ -12,12 +13,15 @@ let standard-lib =
         import glsl
         import itertools
         import Map
+        import Option
+        import property
+        import Rc
+        import Set
         import spicetools
+        import String
         import struct
         import testing
         import UTF-8
-        import property
-        import Option
 
 let styles-map =
     do
