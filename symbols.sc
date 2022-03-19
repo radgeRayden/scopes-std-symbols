@@ -20,6 +20,7 @@ let standard-lib =
         import spicetools
         import String
         import struct
+        import switcher
         import testing
         import UTF-8
 
@@ -68,8 +69,10 @@ let symbols =
                     define-infix   = "define-infix"
                     this-function  = "this-function"
                     :              = ":"
-            functions = (Scope)
-            operators = 
+            functions =
+                'bind-symbols (Scope)
+                    script-launch-args = "script-launch-args"
+            operators =
                 'bind-symbols (Scope)
                     ->  = "->" 
                     **  = "**" 
@@ -95,6 +98,11 @@ let symbols =
                     module-dir   = "module-dir"
                     module-path  = "module-path"
                     module-name  = "module-name"
+                    project-dir  = "project-dir"
+                    package.path = "package.path"
+                    package.library-path = "package.library-path"
+                    package.include-path = "package.include-path"
+
             special-constants =
                 'bind-symbols (Scope)
                     true    = "true"
@@ -134,12 +142,13 @@ let symbols =
                     glsl          = "glsl"
                     itertools     = "itertools"
                     Map           = "Map"
+                    Option        = "Option"
+                    property      = "property"
+                    Rc            = "Rc"
                     spicetools    = "spicetools"
                     struct        = "struct"
                     testing       = "testing"
                     UTF-8         = "UTF-8"
-                    property      = "property"
-                    Option        = "Option"
         locals;
 run-stage;
 
