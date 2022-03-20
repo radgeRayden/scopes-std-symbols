@@ -98,6 +98,7 @@ let symbols =
                     module-dir   = "module-dir"
                     module-path  = "module-path"
                     module-name  = "module-name"
+                    console?     = "console?"
                     project-dir  = "project-dir"
                     package.path = "package.path"
                     package.library-path = "package.library-path"
