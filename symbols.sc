@@ -202,7 +202,7 @@ let symbols =
                 (as? ('@ scope k) Closure) and (add-symbol 'functions k) or superscope
             # external scopes functions
             elseif (or
-                        (va@ 0 ('match? "^sc_" name))
+                        (va@ 0 ('match? str"^sc_" name))
                         # in some cases the only way to detect an extern 
                         (('superof ('typeof v)) == pointer))
                 add-symbol 'functions k
