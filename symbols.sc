@@ -76,6 +76,7 @@ let symbols =
                     <::            = "<::"
                     <<::           = "<<::"
                     _:=            = ":="
+                    *...           = "*..."
             functions =
                 'bind-symbols (Scope)
                     script-launch-args = "script-launch-args"
