@@ -7,7 +7,9 @@ let standard-lib =
         import Capture
         import chaining
         import console
+        import docstring
         import enum
+        import format
         import FunctionChain
         import glm
         import glsl
