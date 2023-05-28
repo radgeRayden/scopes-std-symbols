@@ -69,6 +69,10 @@ let symbols =
                     define-infix   = "define-infix"
                     this-function  = "this-function"
                     :              = ":"
+                    <:             = "<:"
+                    <<:            = "<<:"
+                    <::            = "<::"
+                    <<::           = "<<::"
             functions =
                 'bind-symbols (Scope)
                     script-launch-args = "script-launch-args"
@@ -100,9 +104,6 @@ let symbols =
                     module-name  = "module-name"
                     console?     = "console?"
                     project-dir  = "project-dir"
-                    package.path = "package.path"
-                    package.library-path = "package.library-path"
-                    package.include-path = "package.include-path"
 
             special-constants =
                 'bind-symbols (Scope)
