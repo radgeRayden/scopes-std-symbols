@@ -83,6 +83,13 @@ let symbols =
                     as             = "as"
                     raises         = "raises"
                     returning      = "returning"
+                    unpack         = "unpack"
+                    countof        = "countof"
+                    drop           = "drop"
+                    lose           = "lose"
+                    repr           = "repr"
+                    tostring       = "tostring"
+                    dump           = "dump"
             functions =
                 'bind-symbols (Scope)
                     script-launch-args = "script-launch-args"
