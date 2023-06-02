@@ -75,8 +75,14 @@ let symbols =
                     <<:            = "<<:"
                     <::            = "<::"
                     <<::           = "<<::"
-                    _:=            = ":="
                     *...           = "*..."
+                    lslice         = "lslice"
+                    rslice         = "rslice"
+                    ln             = "ln"
+                    copy           = "copy"
+                    as             = "as"
+                    raises         = "raises"
+                    returning      = "returning"
             functions =
                 'bind-symbols (Scope)
                     script-launch-args = "script-launch-args"
@@ -93,14 +99,18 @@ let symbols =
                     <<= = "<<="
                     |   = "|"
                     ||  = "||"
-
-            types             =
+                    _:= = ":="
+                    ..= = "..="
+                    @   = "@"
+                    @&  = "@&"
+                    &   = "&"
+            types =
                 'bind-symbols (Scope)
                     this-type  = "this-type"
                     super-type = "super-type"
-            sugar-macros      = (Scope)
-            spice-macros      = (Scope)
-            global-symbols    = 
+            sugar-macros   = (Scope)
+            spice-macros   = (Scope)
+            global-symbols =
                 'bind-symbols (Scope)
                     main-module? = "main-module?"
                     module-dir   = "module-dir"
