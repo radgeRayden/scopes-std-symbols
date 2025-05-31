@@ -1,4 +1,4 @@
-# usage: import the module and interate on the VALUES in each subscope.
+# usage: import the module and iterate on the VALUES in each subscope.
 let standard-lib =
     ..
         globals;
